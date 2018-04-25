@@ -1,0 +1,79 @@
+/*Modify search results page*/
+.search #left-area
+{
+    -moz-column-count: 1;
+    column-count: 1;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+.search #left-area .et_pb_post a img {
+	float:left !important;
+	max-width:300px !important;
+	padding:10px;
+}
+.search #left-area ul  {
+	list-style-type: none !important;
+}
+.search .et_pb_post > a {
+    margin: -20px -20px 10px;
+    display: block;
+}
+.search #left-area .et_pb_post {
+    overflow: hidden;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    width: 100%;
+    padding: 19px;
+    border: 1px solid #d8d8d8;
+    background-color: #fff;
+    word-wrap: break-word;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.search #left-area .et_pb_post h2{
+    font-size: 18px;
+}
+.search #left-area .et_pb_post.format-link,
+.search #left-area .et_pb_post.format-quote,
+.search #left-area .et_pb_post.format-audio
+{
+    padding: 0;
+}
+.search .et_pb_post .et_pb_image_container,
+.search .et_pb_post .et_main_video_container,
+.search .et_pb_post .et_audio_content,
+.search .et_pb_post .et_pb_slider {
+    margin: -20px -20px 10px;
+}
+.search .et_pb_post .et_pb_slider .et_pb_slide {
+    min-height: 180px;
+}
+.search .pagination {
+    padding: 20px 0;
+}
+/*Hide the person who has added the product/article*/
+p.post-meta{
+    visibility:hidden;
+}
+/*Add title to the search page*/
+.blog-title {
+    margin-bottom: 60px;}
+hr.archive-line {
+    width: 25%;
+    float: left;
+    border: 0;
+    height: 4px;
+    background-color: #2ea3f2;}
+
+/*Remove the separating line from the sidebar*/
+#main-content .container:before {background: none;}
+/*Hide the sidebar*/
+#sidebar {display:none;}
+/*Expand the content to take the sidebar area*/
+@media (min-width: 981px){
+    #left-area {
+        width: 100%;
+        padding: 23px 0px !important;
+        float: none !important;
+    }
+}
